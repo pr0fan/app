@@ -21,8 +21,8 @@
   </li>
   <li>Настраиваем Homestead<br>
   
-    Создаем папку под проект /Users/<ваш-пользователь>/Projects/<br>
-    Открываем файл Homestead/Homestead.yaml и меняем его содержимое на:<br>
+    Создаем папку под проект /Users/<ваш-пользователь>/Projects/
+    Открываем файл Homestead/Homestead.yaml и меняем его содержимое на:
     
     ip: "192.168.10.10"
     memory: 2048
@@ -137,7 +137,7 @@ APP_URL=https://user.test
   <li>Настраиваем Homestead<br>
   
     Создаем папку под проект c:/Projects/
-    Открываем файл c:/Homestead/Homestead.yaml и меняем его содержимое на:<br>
+    Открываем файл c:/Homestead/Homestead.yaml и меняем его содержимое на:
     
     ip: "192.168.10.10"
     memory: 2048

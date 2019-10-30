@@ -10,12 +10,14 @@
   <li>Устанавливаем VirtualBox</li>
   <li>Устанавливаем Vagrant</li>
   <li>Разворачиваем Homestead<br>
-    vagrant box add laravel/homestead<br>
-    git clone https://github.com/pr0fan/homstade.git Homestead<br>
-    cd Homestead<br>
-    bash init.sh<br>
-    cd ..<br>
+    <pre>
+    vagrant box add laravel/homestead
+    git clone https://github.com/pr0fan/homstade.git Homestead
+    cd Homestead
+    bash init.sh
+    cd ..
     ssh-keygen -t rsa -C "your@email.com"
+    </pre>
   </li>
   <li>Настраиваем Homestead<br>
   
@@ -53,12 +55,14 @@
  </li>
  <li>Переходим в папку Homestead (cd ~/Homestead/)</li>
  <li>
-  Запускаем vagrant up<br>
-  vagrant ssh<br>
-  cd Projects/app/User/<br>
-  composer install<br>
-  touch .env<br>
-  переходим в файл .env и в него вставляем<br>
+  <pre>
+  Запускаем vagrant up
+  vagrant ssh
+  cd Projects/app/User/
+  composer install
+  touch .env
+  переходим в файл .env и в него вставляем
+  </pre>
   <pre>
 APP_NAME=Laravel
 APP_ENV=local
@@ -105,10 +109,12 @@ APP_URL=https://user.test
   MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
   MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
   </pre>
-   php artisan migrate<br>
-   cd frontend/<br>
-   npm install<br>
+  <pre>
+   php artisan migrate
+   cd frontend/
+   npm install
    npm run build
+  </pre>
   </li>
 </ol>
 
@@ -119,16 +125,18 @@ APP_URL=https://user.test
   <li>Устанавливаем VirtualBox</li>
   <li>Устанавливаем Vagrant</li>
   <li>Разворачиваем Homestead<br>
-    vagrant box add laravel/homestead<br>
-    git clone https://github.com/pr0fan/homstade.git c:/Homestead<br>
-    cd c:/Homestead<br>
-    init.bat или перейдите в c:/Homestead с помощью файлового менеджера и кликните по файлу init.bat<br>
-    cd ..<br>
+    <pre>
+    vagrant box add laravel/homestead
+    git clone https://github.com/pr0fan/homstade.git c:/Homestead
+    cd c:/Homestead
+    init.bat или перейдите в c:/Homestead с помощью файлового менеджера и кликните по файлу init.bat
+    cd ..
     ssh-keygen -t rsa -C "your@email.com"
+    </pre>
   </li>
   <li>Настраиваем Homestead<br>
   
-    Создаем папку под проект c:/Projects/<project-name><br>
+    Создаем папку под проект c:/Projects/
     Открываем файл c:/Homestead/Homestead.yaml и меняем его содержимое на:<br>
     
     ip: "192.168.10.10"
@@ -162,12 +170,14 @@ APP_URL=https://user.test
  </li>
  <li>Переходим в папку Homestead (cd c:/Homestead)</li>
  <li>
-  Запускаем vagrant up<br>
-  vagrant ssh<br>
-  cd Projects/app/User/<br>
-  composer install<br>
-  touch .env<br>
-  переходим в файл .env и в него вставляем<br>
+  <pre>
+  Запускаем vagrant up
+  vagrant ssh
+  cd Projects/app/User/
+  composer install
+  touch .env
+  переходим в файл .env и в него вставляем
+  </pre>
   <pre>
 APP_NAME=Laravel
 APP_ENV=local
@@ -214,10 +224,13 @@ APP_URL=https://user.test
   MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
   MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
   </pre>
-   php artisan migrate<br>
-   cd frontend/<br>
-   npm install<br>
+  
+  <pre>
+   php artisan migrate
+   cd frontend/
+   npm install
    npm run build
+  </pre>
   </li>
 </ol>
 
